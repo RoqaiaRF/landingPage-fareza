@@ -29,13 +29,11 @@
 
 <header>
 
-    <a href="#" class="logo"> <div class="logo">
-        <img src="images/logo.png" hight="120px" width="120px"alt="">
-    </div></a>
+    <a href="#" class="logo"> 
+        <img src="images/logo.png" width="100"alt="">
+    </a>
     
     <input type="checkbox" id="menu-bar">
-    <label for="menu-bar" class="fas fa-bars"></label>
-    
     <nav class="navbar">
         <a id="l1" href="#home">Home</a>
         <a id="l2" href="#features">Features</a>
@@ -43,12 +41,14 @@
         <a id="l4" href="#pricing">After-sales services</a>
         <a id="l5" href="#contact">Contact Us</a>
     </nav>
-  
     <select id="select-lang" onchange="handleChangeLanguage()" data-lang-switcher class="lang-select">
-        <option value="ar">العربية</option>
         <option value="en">English</option>
+        <option value="ar">العربية</option>
+        
     </select>
+    <label for="menu-bar" class="fas fa-bars"></label>
 
+   
 </header>
 
 <!-- header section ends -->
@@ -265,6 +265,7 @@
      
 <!-- JavaScript Starts here! -->
 <script>
+    
 let send  = document.getElementById("send").value;
 let l1  = document.getElementById("l1");
 let l2  = document.getElementById("l2");
@@ -315,6 +316,8 @@ let l46  = document.getElementById("l46");
 let l47  = document.getElementById("l47");
 let l48  = document.getElementById("l48")
 
+// Defualt Language is english
+localStorage.setItem("lang", "english");
 
 
 function handleChangeLanguage(){

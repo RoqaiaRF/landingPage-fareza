@@ -131,6 +131,7 @@ header{
 header .logo{
     font-size: 2rem;
     color:var(--gray);
+    margin-top: 4px;
 }
 header .logo span{
     color:var(--green);
@@ -164,8 +165,8 @@ header label{
     justify-content: center;
     background:url(../images/home-bg-img.png) no-repeat;
     background-size: cover;
-    background-position: center;
-}
+    background-position: bottom;
+} 
 
 .home .image img{
     width:40vw;
